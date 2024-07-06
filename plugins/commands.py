@@ -72,7 +72,10 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🍿 JԾIN ԾUR UᎮDΛTΞ CHΛNNΞLS 🍿", url=invite_link.invite_link
+                    "JԾIN 1", url=invite_link.invite_link
+                ),
+                InlineKeyboardButton(
+                    "JԾIN 2", url=CHNL_LNK
                 )
             ]
         ]
@@ -86,7 +89,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**YOU ARE NOT IN OUR UPDATE CHANNELS GIVEN BELOW, SO YOU WON'T GET THE MOVIE FILE...\n\nIF YOU WANT THE MOVIE FILE, JOIN\nt.me/Lordshipmovies &\nt.me/Hislordship_Movies\n\nTHEN CLICK ON THE '↻ TRY AGAIN' BUTTON BELOW...\n\nTHEN YOU WILL GET THE MOVIE FILES...**",
+            text="**You need to join my Channel in order to get movie files t.me/Lordshipmovies\n\nKindly Please join the 2 Channels below**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
