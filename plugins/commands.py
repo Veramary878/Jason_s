@@ -89,7 +89,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**You need to join my Channel in order to get movie files t.me/Lordshipmovies\n\nKindly Please join the 2 Channels below**",
+            text="**You need to join my Channel in order to get the movie files\n\nKindly Please join the 2 Channels below**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
